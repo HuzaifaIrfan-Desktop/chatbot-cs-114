@@ -1,5 +1,15 @@
 # Chat-Bot
 
+
+## CS-144 Semester Project
+## By Huzaifa Irfan
+
+
+## ME-11 (C)
+## SMME
+## NUST, Islamabad
+
+
 <!-- ## Setting up the Environment: -->
 
  ### Installing Python 
