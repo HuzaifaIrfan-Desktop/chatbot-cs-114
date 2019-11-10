@@ -1,10 +1,16 @@
 # Chat-Bot
 
+<p align="right">
+<img src="smme.png">
+</p>
 
  CS-144 Semester Project
+ <br>
  By Huzaifa Irfan
+ <br>
  ME-11 (C)
- SMME
+ <br>
+ SMME, 
  NUST, Islamabad
 
 
