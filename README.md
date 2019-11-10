@@ -1,9 +1,11 @@
 # Chat-Bot
+<div style="display:flex; flex-wrap: wrap;">
 
 <p align="right">
-<img src="smme.png" height="100" width="100">
+<img src="smme.png" height="200" width="200">
 </p>
 
+<p>
  CS-144 Semester Project
  <br>
  By Huzaifa Irfan
@@ -12,6 +14,10 @@
  <br>
  SMME, 
  NUST, Islamabad
+
+
+ </p>
+ </div>
 
 
 <!-- ## Setting up the Environment: -->
