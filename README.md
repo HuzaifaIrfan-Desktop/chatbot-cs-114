@@ -34,4 +34,4 @@ In the Chat-Bot folder
 >> pip install -r requirements.txt 
 
 ### Running the app
->> python app.py
+>> pytho main.py
