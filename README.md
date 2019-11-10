@@ -1,7 +1,7 @@
 # Chat-Bot
 
 <p align="right">
-<img src="smme.png">
+<img src="smme.png" height="100" width="100">
 </p>
 
  CS-144 Semester Project
