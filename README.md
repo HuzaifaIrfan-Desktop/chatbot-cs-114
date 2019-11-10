@@ -1,13 +1,11 @@
 # Chat-Bot
 
 
-#### CS-144 Semester Project
-#### By Huzaifa Irfan
-
-
-##### ME-11 (C)
-##### SMME
-##### NUST, Islamabad
+ CS-144 Semester Project
+ By Huzaifa Irfan
+ ME-11 (C)
+ SMME
+ NUST, Islamabad
 
 
 <!-- ## Setting up the Environment: -->
@@ -44,8 +42,14 @@ In the Chat-Bot folder
 >> pip install -r requirements.txt 
 
 ### Running the app
->> pytho main.py
+>> python main.py
 
 
-### Test the App online
-[Online Test](https://repl.it/@HuzaifaIrfan/Chat-Bot-Cpp)
+<!-- ### Test the App online
+[Online Test](https://repl.it/@HuzaifaIrfan/Chat-Bot-Cpp) -->
+
+
+
+### Contact
+* Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
+* [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001) 
