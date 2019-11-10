@@ -1,24 +1,4 @@
 # Chat-Bot
-<div style="display:flex; flex-wrap: wrap;">
-
-<div align="right">
-<img src="smme.png" height="200" width="200">
-</div>
-
-<div>
- CS-144 Semester Project
- <br>
- By Huzaifa Irfan
- <br>
- ME-11 (C)
- <br>
- SMME, 
- NUST, Islamabad
-
-
- </div>
- </div>
-
 
 <!-- ## Setting up the Environment: -->
 
@@ -65,3 +45,17 @@ In the Chat-Bot folder
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
 * [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001) 
+
+
+<div>
+ CS-144 Semester Project
+ <br>
+ By Huzaifa Irfan
+ <br>
+ ME-11 (C)
+ <br>
+ SMME, 
+ NUST, Islamabad
+ </div>
+
+
