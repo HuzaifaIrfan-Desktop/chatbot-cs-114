@@ -1,15 +1,15 @@
 # Chat-Bot
 
-## Setting up the Environment:
+<!-- ## Setting up the Environment: -->
 
- ### Setting up the Programming language on your PC
+ ### Installing Python 
  Get Python for your Operating System from the download Page.
 
-[Python](https://www.python.org/downloads/)
+[Python Download Page](https://www.python.org/downloads/)
 * python 3.6.8 or higher
 * pip 19.3.1 or higher
-
- Install and add to PATH
+<!-- 
+ Install and add to PATH -->
 
 <!-- ### Setting up the virtual environment
 
@@ -30,5 +30,8 @@ In the Chat-Bot folder
 ### Installing the Requirements
 > pip install -r requirements.txt -->
 
+### Installing Dependencies
+>> pip install -r requirements.txt 
+
 ### Running the app
-> python app.py
+>> python app.py
