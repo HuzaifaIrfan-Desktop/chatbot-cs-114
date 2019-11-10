@@ -1,6 +1,6 @@
 import nltk
 from nltk.tokenize import word_tokenize
-
+from colorama import Fore
 
 import json
 import random
@@ -23,6 +23,7 @@ class bot:
             self.e404 = json.load(nfdb)
 
     def setup(self):
+        print(Fore.YELLOW)
         nltk.download('punkt')
 
     def checkquit(self):
@@ -35,9 +36,10 @@ class bot:
         self.inp=""
         self.tokens=[]
         self.answer=""
+        print(Fore.RESET,end="")
 
     def getinput(self):
-        self.inp =input("YOU: ").lower()
+        self.inp =input("\nYOU: ").lower()
 
     def tokenize(self):
         self.tokens = word_tokenize(self.inp)

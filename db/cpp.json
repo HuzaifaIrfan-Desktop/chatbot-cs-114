@@ -22,12 +22,9 @@
         {"tag":"loop","keywords":["loops"]},
         {"tag":"class","keywords":["classes"]},
 
-        {"tag":"wikipedia","keywords":["search","wiki"]},
 
-
-
-        {"tag":"c++","keywords":["cpp","cplus","cplusplus"]},
-        {"tag":"otherlang","keywords":["python","anaconda","c","c#","py","perl","php","phphp","js","javascript","typescript","java","kotlin","html","html5","css","css3","ruby"]}
+        {"tag":"c++","keywords":["cpp","cplus","cplusplus","+","++"]},
+        {"tag":"otherlang","keywords":["python","anaconda","c#","py","perl","php","phphp","js","javascript","typescript","java","kotlin","html","html5","css","css3","ruby"]}
 
 
 

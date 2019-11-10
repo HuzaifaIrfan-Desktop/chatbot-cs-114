@@ -3,6 +3,9 @@ from bot import bot
 import json
 import random
 
+from colorama import Fore
+
+
 answerfile="db/cpp.json"
 e404file="db/404.json"
 
@@ -16,10 +19,10 @@ class cpp_bot(bot):
         self.inp=""
         self.tokens=[]
         self.answer=""
-        
+
         with open(e404file) as nfdb:
             self.e404 = json.load(nfdb)
         
 
     def printanswer(self):
-        print("BOT (CPP_Bot):",self.answer)
+        print(Fore.RED+"BOT (CPP_Bot): "+Fore.GREEN+self.answer)
