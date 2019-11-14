@@ -2,9 +2,10 @@
 from cpp_bot import cpp_bot
 from colorama import Fore
 import random
+import json
 
 
-from flask import Flask, render_template, session, request, send_from_directory, \
+from flask import Flask, render_template, session, request,jsonify, send_from_directory, \
 copy_current_request_context
 from flask_socketio import SocketIO, emit, disconnect
 import datetime
@@ -20,6 +21,7 @@ def time():
 
 
 users={}
+logs=[]
 
 
 
@@ -27,8 +29,8 @@ async_mode = None
 
 app = Flask(__name__, static_url_path='')
 import logging
-log = logging.getLogger('werkzeug')
-log.disabled = True
+logss = logging.getLogger('werkzeug')
+logss.disabled = True
 
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, async_mode=async_mode)
@@ -44,7 +46,9 @@ def index():
     # return render_template('index.html', async_mode=socketio.async_mode)
 
 
-
+@app.route('/log')
+def logf():
+    return jsonify(logs)
 
 
 
@@ -61,12 +65,14 @@ def gotinp(inp):
     res=bot.getanswer()
 
 
-    
+
     query={"input":inp,"response":res,"time":time()}
     user["queries"].append(query)
 
     emit("response",res)
-    print(f"id: '{request.sid}', name: '{user['username']}', input: '{inp}', response: '{res}', time: '{time()}' ")
+    log=f"id: '{request.sid}', name: '{user['username']}', input: '{inp}', response: '{res}', time: '{time()}' "
+    logs.append(log)
+    print(log)
 
 
 
@@ -82,7 +88,9 @@ def Connection(username):
     user["bot"]=cpp_bot();
     bot=user["bot"]
     bot.setup()
-    print(request.sid +" " +username + " Connected", time())
+    log=request.sid +" " +username + " Connected "+ time()
+    logs.append(log)
+    print(log)
 
 
 
@@ -97,11 +105,16 @@ def disconnect():
     username=user["username"]
     user["connection"]="disconnected"
     user["disconnectiontime"]=time()
-    print(request.sid +" " +username + " Disconnected" , time())
+    log=request.sid +" " +username + " Disconnected " +time()
+    logs.append(log)
+    print(log)
+    #print(users)
 
 
 
 
 if __name__ == '__main__':
-    print("Web Server started on port",port,"at :",time())
+    log="Web Server started on port "+f"{port}"+" at :"+time()
+    logs.append(log)
+    print(log)
     socketio.run(app,host='0.0.0.0', port=port, debug=False)
