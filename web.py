@@ -50,6 +50,16 @@ def index():
 def logf():
     return jsonify(logs)
 
+@app.route('/obj')
+def objf():
+    tempobj=users.copy()
+    templst=tempobj.values()
+    lst=[]
+    for temp in templst:
+        temp["bot"]=None
+        lst.append(temp)
+    return jsonify(lst)
+
 
 
 @socketio.on('sendinp', namespace='/app')
@@ -81,6 +91,7 @@ def gotinp(inp):
 def Connection(username):
     users[request.sid]={}
     user=users[request.sid]
+    user["sid"]=request.sid
     user["username"]=username
     user["queries"]=[]
     user["connection"]="connected"
