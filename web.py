@@ -11,13 +11,13 @@ import datetime
 
 
 
-
+port=3098
 
 def time():
     now = f"{datetime.datetime.now()}"
     return now
 
-print("Web Server started on :",time())
+
 
 users={}
 
@@ -103,4 +103,5 @@ def disconnect():
 
 
 if __name__ == '__main__':
-    socketio.run(app, port=3098, debug=False)
+    print("Web Server started on port",port,"at :",time())
+    socketio.run(app,host='0.0.0.0', port=port, debug=False)
