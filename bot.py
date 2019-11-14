@@ -41,6 +41,9 @@ class bot:
     def getinput(self):
         self.inp =input("\nYOU: ").lower()
 
+    def setinput(self,inp):
+        self.inp =inp.lower()
+
     def tokenize(self):
         self.tokens = word_tokenize(self.inp)
 
@@ -83,3 +86,6 @@ class bot:
 
     def printanswer(self):
         print("BOT:",self.answer)
+
+    def getanswer(self):
+        return self.answer
