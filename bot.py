@@ -58,8 +58,10 @@ class bot:
                 br=0
                 for keyword in synonym["keywords"]:
                     if(keyword==word):
-                        temptokens.remove(word)
-                        temptokens.insert(0,synonym["tag"])
+
+                        temptokens[int(temptokens.index(keyword))]=synonym["tag"]
+                        # temptokens.remove(word)
+                        # temptokens.insert(0,synonym["tag"])
                         br=1
                         break;
                 if(br==1):
