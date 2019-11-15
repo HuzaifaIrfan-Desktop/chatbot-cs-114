@@ -64,6 +64,7 @@ def objf():
 
 @socketio.on('sendinp', namespace='/app')
 def gotinp(inp):
+    inptime=time()
     res="NF"
     user=users[request.sid]
     bot=user["bot"]
@@ -76,11 +77,11 @@ def gotinp(inp):
 
 
 
-    query={"input":inp,"response":res,"time":time()}
+    query={"input":inp,"response":res,"inptime":inptime,"restime":time()}
     user["queries"].append(query)
 
     emit("response",res)
-    log=f"id: '{request.sid}', name: '{user['username']}', input: '{inp}', response: '{res}', time: '{time()}' "
+    log=f"id: '{request.sid}', name: '{user['username']}', input: '{inp}', response: '{res}', inptime: '{inptime}', restime: '{time()}' "
     logs.append(log)
     print(log)
 
