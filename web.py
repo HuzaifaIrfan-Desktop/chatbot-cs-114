@@ -117,6 +117,9 @@ def disconnect():
     user["connection"]="disconnected"
     user["disconnectiontime"]=time()
     log=request.sid +" " +username + " Disconnected " +time()
+    usrval=users.values()
+    for user in usrval:
+        user["bot"]=None
     logs.append(log)
     print(log)
     #print(users)
