@@ -13,7 +13,7 @@ quits=["Exiting.."]
 print(random.choice(titles))
 
 
-newbot = cpp_bot();
+newbot = cpp_bot()
 newbot.setup()
 
 

@@ -150,7 +150,7 @@
             {"name":"bothelp","match":[["help"]],"res":["You can ask me anything about C++"]},
             {"name":"botdoing","match":[["bot","how"]],"res":["I am great"]},
             {"name":"botthank","match":[["thanks"],["thank","bot"]],"res":["You are welcome"]},
-            {"name":"botname","match":[["bot"]],"res":["I am Skiie-Bot","I am your personal assistant (Skiie-Bot)"]},
+            {"name":"botname","match":[["bot"]],"res":["I am Chat-Bot","I am your personal assistant (Chat-Bot)"]},
             
 
             {"name":"me","match":[["me"]],"res":["I can't tell anything about you","I am restricted","I can't tell any private information"]},

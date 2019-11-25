@@ -97,7 +97,7 @@ def Connection(username):
     user["queries"]=[]
     user["connection"]="connected"
     user["connectiontime"]=time()
-    user["bot"]=cpp_bot();
+    user["bot"]=cpp_bot()
     bot=user["bot"]
     bot.setup()
     log=request.sid +" " +username + " Connected "+ time()
@@ -112,7 +112,7 @@ def Connection(username):
 
 
 @socketio.on('disconnect', namespace='/app')
-def disconnect():
+def disconnected():
     user=users[request.sid]
     username=user["username"]
     user["connection"]="disconnected"
