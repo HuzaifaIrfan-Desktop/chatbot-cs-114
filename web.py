@@ -11,8 +11,17 @@ from flask_socketio import SocketIO, emit, disconnect
 import datetime
 
 
+glossery=[]
 
-port=3098
+with open("db/cpp.json") as dbfile:
+    dbs = json.load(dbfile)
+    querieslst=dbs["queries"]
+    for aquery in querieslst:
+        glossery.append(aquery["name"])
+
+
+
+port=3097
 
 def time():
     now = f"{datetime.datetime.now()}"
@@ -37,18 +46,23 @@ socketio = SocketIO(app, async_mode=async_mode)
 
 @app.route('/public/<path:path>')
 def send_file(path):
-    #print(path)
     return send_from_directory('public', path)
 
 @app.route('/')
 def index():
     return send_from_directory('public', "index.html")
-    # return render_template('index.html', async_mode=socketio.async_mode)
-
 
 @app.route('/log')
 def logf():
     return jsonify(logs)
+
+
+
+@app.route('/db')
+def db():
+    return jsonify(glossery)
+
+    
 
 @app.route('/obj')
 def objf():
@@ -123,8 +137,6 @@ def disconnected():
         user["bot"]=None
     logs.append(log)
     print(log)
-    #print(users)
-
 
 
 

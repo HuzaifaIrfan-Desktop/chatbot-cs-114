@@ -8,19 +8,18 @@ import random
 
 
 
-
-
 class bot:
 
 
     def __init__(self):
-        self.synonymslst=[]
-        self.querieslst=[]
+        self.fname=""
+        with open(self.fname) as dbfile:
+            self.db = json.load(dbfile)
+        self.synonymslst=self.db["synonyms"]
+        self.querieslst=self.db["queries"]
         self.inp=""
         self.tokens=[]
         self.answer=""
-        with open("db/404.json") as nfdb:
-            self.e404 = json.load(nfdb)
 
     def setup(self):
         print(Fore.YELLOW)
@@ -60,12 +59,11 @@ class bot:
                     if(keyword==word):
 
                         temptokens[int(temptokens.index(keyword))]=synonym["tag"]
-                        # temptokens.remove(word)
-                        # temptokens.insert(0,synonym["tag"])
+
                         br=1
-                        break;
+                        break
                 if(br==1):
-                    break;
+                    break
         self.tokens=temptokens
 
 
@@ -80,9 +78,8 @@ class bot:
                             matched+=1
                 if(matched>=len(matchlst)):
                     self.answer=random.choice(query["res"])
-                    return 0;
+                    return 0
 
-        self.answer=random.choice(self.e404)
         return 404
 
 
