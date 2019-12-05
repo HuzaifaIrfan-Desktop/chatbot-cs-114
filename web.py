@@ -86,6 +86,7 @@ def gotinp(inp):
     bot.setinput(inp)
     bot.tokenize()
     bot.similartokens()
+    bot.removeduplicate()
     bot.searchresponse()
     res=bot.getanswer()
 

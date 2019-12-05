@@ -9,6 +9,8 @@
 [Python Download Page](https://www.python.org/downloads/)
 * python 3.6.8 or higher
 * pip 19.3.1 or higher
+
+
 <!-- 
  Install and add to PATH -->
 
@@ -24,12 +26,11 @@ In the Chat-Bot folder
 #### Activating your Virtual Environment
 
 ##### For Windows
-> \env\Scripts\activate.bat
+> start env\Scripts\activate
 #####  For Mac / Linux
 > source env/bin/activate
 
-### Installing the Requirements
-> pip install -r requirements.txt -->
+-->
 
 ### Installing Dependencies
 >> pip install -r requirements.txt 
@@ -37,9 +38,6 @@ In the Chat-Bot folder
 ### Running the app
 >> python main.py
 
-
-<!-- ### Test the App online
-[Online Test](https://repl.it/@HuzaifaIrfan/Chat-Bot-Cpp) -->
 
 
 
@@ -49,7 +47,7 @@ In the Chat-Bot folder
 
 
 <div>
- CS-144 Semester Project
+ CS-114 Semester Project
  <br>
  Dated : 10 Nov 2019
  <br>

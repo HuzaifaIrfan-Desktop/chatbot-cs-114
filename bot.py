@@ -67,6 +67,10 @@ class bot:
         self.tokens=temptokens
 
 
+    def removeduplicate(self):
+        self.tokens=list(dict.fromkeys(self.tokens))
+
+
     def searchresponse(self):
         for query in self.querieslst:
 

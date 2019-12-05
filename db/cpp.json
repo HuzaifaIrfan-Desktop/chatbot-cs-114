@@ -152,7 +152,7 @@
 
 
             {"name":"nested if","match":[["nested","if"],["nested","if-else"]],"res":["Nested if statements means an if statement inside another if statement."]},
-            {"name":"ifelse","match":[["ifelse"],["if-else"],["if","else"]],"res":["It is used to specify a new condition to test, if the first condition is false"]},
+            {"name":"ifelse","match":[["else-if"],["elseif"],["if","else"]],"res":["It is used to specify a new condition to test, if the first condition is false"]},
             {"name":"switch","match":[["switch"],["case"]],"res":["It is used to specify many alternative blocks of code to be executed"]},
             {"name":"else","match":[["else"]],"res":["It is used to specify a block of code to be executed, if the same condition is false"]},
             {"name":"if","match":[["if"]],"res":["It is used to specify a block of code to be executed, if a specified condition is true"]},

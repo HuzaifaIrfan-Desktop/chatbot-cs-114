@@ -34,6 +34,7 @@ while(checkquit):
             print(Fore.RED+"BOT: "+Fore.GREEN+random.choice(empty))
     checkquit=newbot.checkquit()
     newbot.similartokens()
+    newbot.removeduplicate()
     newbot.searchresponse()
     newbot.printanswer()
 
