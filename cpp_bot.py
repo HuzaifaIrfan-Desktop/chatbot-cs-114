@@ -21,7 +21,7 @@ class cpp_bot(bot):
 
 
     def printanswer(self):
-        print(Fore.RED+"BOT (CPP_Bot): "+Fore.GREEN+self.answer)
+        print(Fore.RED+"BOT (CPP_Bot): "+Fore.GREEN+self.answer) 
 
     def returnanswer(self):
         return self.answer

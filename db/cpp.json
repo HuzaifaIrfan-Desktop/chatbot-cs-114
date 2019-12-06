@@ -63,7 +63,9 @@
     {"name":"quit","match":[["quit"]],"res":["Bye","Good Bye","See you soon","See ya","See you again"]},
 
 
-            {"name":"other languages","match":[["otherlang"]],"res":["I can only tell you about c++"]},
+            {"name":"other languages","match":[["otherlang"]],"res":["I can only tell you about c++","Only C++","C++ Only","I am restricted to c++"]},
+
+            {"name":"and","match":[["and"],["difference"]],"res":["I am not programmed to process two or more queries at a time.."]},
 
 
 
