@@ -197,7 +197,7 @@
             {"name":"bot do","match":[["what" ,"bot","do"]],"res":["I answers queries about C++"]},
             {"name":"bot doing","match":[["bot","how"]],"res":["I am great"]},
             {"name":"bot thank","match":[["thanks"],["thank","bot"]],"res":["You are welcome"]},
-            {"name":"bot name","match":[["bot"]],"res":["I am Chat-Bot","I am your personal assistant (Chat-Bot)"]},
+            {"name":"bot name","match":[["bot"]],"res":["I am a Chat-Bot"]},
             
 
             {"name":"me","match":[["me"]],"res":["I can't tell anything about you","I am restricted","I can't tell any private information"]},
@@ -209,7 +209,7 @@
 
 
 
-            ,{"name":"not found","match":[[]],"res":["Error 404","404","not found","I don't understand","I don't know","Please ask another question"]}
+            ,{"name":"not found","match":[[]],"res":["Plz  ask a simple question","I don't understand","I don't know","Please ask another question"]}
 
 
 
