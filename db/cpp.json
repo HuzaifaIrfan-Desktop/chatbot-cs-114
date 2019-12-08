@@ -99,7 +99,7 @@
             {"name":"base class","match":[["base","class"],["parent","class"]],"res":[ "The class being inherited from"]},
 
             {"name":"inheritence","match":[["inheritance"]],"res":[ "In C++, it is possible to inherit attributes and methods from one class to another."]},
-            {"name":"Polymorphism ","match":[["polymorphism "]],"res":[ "A function in derived class having same name but different implementation"]},
+            {"name":"Polymorphism ","match":[["polymorphism"]],"res":[ "A function in derived class having same name but different implementation"]},
 
           
             {"name":"Function Overloading","match":[["function","overloading"]],"res":[ "With function overloading, multiple functions can have the same name with different parameters."]},
