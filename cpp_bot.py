@@ -8,8 +8,9 @@ from colorama import Fore
 
 
 class cpp_bot(bot):
-    def __init__(self):
-        self.fname="db/cpp.json"
+    
+    def __init__(self,filename):
+        self.fname=filename
         with open(self.fname) as dbfile:
             self.db = json.load(dbfile)
 
@@ -21,7 +22,7 @@ class cpp_bot(bot):
 
 
     def printanswer(self):
-        print(Fore.RED+"BOT (CPP_Bot): "+Fore.GREEN+self.answer) 
+        print(Fore.YELLOW+"CPP_Bot: "+Fore.GREEN+self.answer+Fore.RESET)
 
-    def returnanswer(self):
-        return self.answer
+
+

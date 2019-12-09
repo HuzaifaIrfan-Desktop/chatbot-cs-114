@@ -10,7 +10,7 @@
 
         {"tag":"hello","keywords":["hi"]},
 
-        {"tag":"what","keywords":["define","def","sumerize","brief","note","mean","meant"]},
+        {"tag":"what","keywords":["define","def","sumerize","brief","note","mean","meant","briefly"]},
 
         {"tag":"bot","keywords":["you","your","yourself"]},
         
@@ -32,8 +32,8 @@
 
         {"tag":"header","keywords":["declarations","declaration",".h"]},
 
-
-        {"tag":"parameter","keywords":   ["parameters","arguments","argument"]},
+        {"tag":"argument","keywords":   ["arguments"]},
+        {"tag":"parameter","keywords":   ["parameters"]},
      
 
 
@@ -109,8 +109,9 @@
 
             {"name":"reference","match":[["reference"]],"res":[" A reference variable is a 'reference' to an existing variable, and it is created with the & operator."]},
 
-
-            {"name":"parameter","match":[["parameter"]],"res":["Information can be passed to functions as a Arguments. Parameters act as variables inside the function."]},
+            
+            {"name":"argument","match":[["argument"]],"res":["Information can be passed to functions as a Arguments."]},
+            {"name":"parameter","match":[["parameter"]],"res":["Parameters act as variables inside the function."]},
 
 
             {"name":"operators","match":[["operator"]],"res":["Operators are used to perform operations on variables and values."]},
@@ -209,7 +210,7 @@
 
 
 
-            ,{"name":"not found","match":[[]],"res":["Plz  ask a simple question","I don't understand","I don't know","Please ask another question"]}
+            ,{"name":"not found","match":[[]],"res":["Good Question but I can't tell anything you about it.","Plz  ask a simple question","I don't understand","I don't know","Please ask another question"]}
 
 
 

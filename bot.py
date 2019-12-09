@@ -11,8 +11,8 @@ import random
 class bot:
 
 
-    def __init__(self):
-        self.fname=""
+    def __init__(self,filename):
+        self.fname=filename
         with open(self.fname) as dbfile:
             self.db = json.load(dbfile)
         self.synonymslst=self.db["synonyms"]
@@ -22,7 +22,6 @@ class bot:
         self.answer=""
 
     def setup(self):
-        print(Fore.YELLOW)
         nltk.download('punkt')
 
     def checkquit(self):
@@ -35,7 +34,6 @@ class bot:
         self.inp=""
         self.tokens=[]
         self.answer=""
-        print(Fore.RESET,end="")
 
     def getinput(self):
         self.inp =input("\nYOU: ").lower()
@@ -46,8 +44,16 @@ class bot:
     def tokenize(self):
         self.tokens = word_tokenize(self.inp)
 
+    def split(self):
+        whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ+')
+        self.inp=''.join(filter(whitelist.__contains__, self.inp))
+        self.tokens = self.inp.split()
+
     def printtokens(self):
         print(self.tokens)
+
+    def returntokens(self):
+        return self.tokens
 
 
     def similartokens(self):
@@ -73,7 +79,6 @@ class bot:
 
     def searchresponse(self):
         for query in self.querieslst:
-
             for matchlst in query["match"]:
                 matched=0
                 for match in matchlst:
@@ -83,8 +88,7 @@ class bot:
                 if(matched>=len(matchlst)):
                     self.answer=random.choice(query["res"])
                     return 0
-
-        return 404
+        return 0
 
 
     def printanswer(self):

@@ -84,7 +84,8 @@ def gotinp(inp):
     bot=user["bot"]
     bot.reset()
     bot.setinput(inp)
-    bot.tokenize()
+    bot.split()
+    # bot.tokenize()
     bot.similartokens()
     bot.removeduplicate()
     bot.searchresponse()
@@ -112,9 +113,9 @@ def Connection(username):
     user["queries"]=[]
     user["connection"]="connected"
     user["connectiontime"]=time()
-    user["bot"]=cpp_bot()
+    user["bot"]=cpp_bot("db/cpp.json")
     bot=user["bot"]
-    bot.setup()
+    # bot.setup()
     log=request.sid +" " +username + " Connected "+ time()
     logs.append(log)
     print(log)
