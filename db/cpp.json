@@ -6,7 +6,7 @@
 
         {"tag":"aoa","keywords":["asalaam","salam","assalaam","asalam"]},
 
-        {"tag":"quit","keywords":["exit","halt","shutdown","close","off","disturb","stop","shutup","bye","goodbye","sleep"]},
+        {"tag":"quit","keywords":["exit","halt","shutdown","close","off","disturb","stop","bye","goodbye","sleep"]},
 
         {"tag":"hello","keywords":["hi"]},
 
@@ -38,7 +38,8 @@
 
 
         {"tag":"c++","keywords":["cpp","cplus","cplusplus","+","++"]},
-        {"tag":"otherlang","keywords":["python","anaconda","c#","py","perl","php","js","javascript","typescript","java","kotlin","html","html5","css","css3","ruby"]}
+
+        {"tag":"otherlang","keywords":["other","python","anaconda","c#","py","perl","php","js","javascript","typescript","java","kotlin","html","html5","css","css3","ruby"]}
 
 
 
@@ -99,7 +100,7 @@
             {"name":"base class","match":[["base","class"],["parent","class"]],"res":[ "The class being inherited from"]},
 
             {"name":"inheritence","match":[["inheritance"]],"res":[ "In C++, it is possible to inherit attributes and methods from one class to another."]},
-            {"name":"Polymorphism ","match":[["polymorphism"]],"res":[ "A function in derived class having same name but different implementation"]},
+            {"name":"polymorphism ","match":[["polymorphism"]],"res":[ "A function in derived class having same name but different implementation"]},
 
           
             {"name":"Function Overloading","match":[["function","overloading"]],"res":[ "With function overloading, multiple functions can have the same name with different parameters."]},
@@ -204,7 +205,7 @@
             {"name":"me","match":[["me"]],"res":["I can't tell anything about you","I am restricted","I can't tell any private information"]},
 
 
-            {"name":"aoa","match":[["aoa"]],"res":["Wa alaikum Aslam","Ws"]},
+            {"name":"aoa","match":[["aoa"]],"res":["Wa alaikum Aslam"]},
             {"name":"hello","match":[["hello"]],"res":["Hi","Hi !","Hello","Hi, How can i help?"]}
 
 

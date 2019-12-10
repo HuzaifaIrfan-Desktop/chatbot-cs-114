@@ -1,7 +1,7 @@
 from cpp_bot import cpp_bot
 import datetime
 
-inps=["What do you mean by operator overloading in classes in c++???","Define Object Oriented Programming."]
+inps=["What do you mean by operator overloading in classes in c++???","Define Object Oriented Programming....."]
 
 
 def returntime():
@@ -30,8 +30,8 @@ for inp in inps:
     print(newbot.inp)
 
     print("\nTokenizing Input ")
-    newbot.split() #spliting the input into tokens 
-    # newbot.tokenize() #spliting the input into tokens by nltk tokenizer function
+   # newbot.split() #spliting the input into tokens 
+    newbot.tokenize() #spliting the input into tokens by nltk tokenizer function
     printtimedifference()
     newbot.printtokens()
 
