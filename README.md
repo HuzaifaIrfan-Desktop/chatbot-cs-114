@@ -27,13 +27,13 @@
 ### Open Terminal / Bash / CMD / Powershell in the project directory 
 
 ### Setting up the virtual environment* 
-#### *Recommended but not required except if not working in the user base environment
+*Recommended but not required except if some errors in the user base environment
 
 #### Installing virtualenv
 >pip install virtualenv
 
 #### Creating new Virtual Environment
-In the Chat-Bot folder
+In the project Directory
 > virtualenv env
 
 #### Activating your Virtual Environment
@@ -54,8 +54,8 @@ In the Chat-Bot folder
 > python web.py
 
 
-This Web GUI is also depolyed under this link till End of 2019.
-[WEB GUI](http://skiie.com:3098/)
+This Web GUI is depolyed till End of 2019 under
+[http://skiie.com:3098/](http://skiie.com:3098/)
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
