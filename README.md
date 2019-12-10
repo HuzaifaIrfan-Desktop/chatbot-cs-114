@@ -1,9 +1,8 @@
 # Chat-Bot
 #### This Bot answers queries related to c++ only
 #### This is the Git repository for semester project of CS-114
-##### ME-11 (C)
-##### Group - 3
-##### Group Members
+
+##### Group-3 ME-11(C) Members
 * Huzaifa Irfan (285501)
 * Hassan Ahmed
 * Hassaan Ahmed
