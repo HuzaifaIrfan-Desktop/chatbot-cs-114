@@ -3,6 +3,11 @@ from cpp_bot import cpp_bot
 from colorama import Fore
 import random
 import json
+import datetime
+
+
+
+
 
 
 from flask import Flask, render_template, session, request,jsonify, send_from_directory, \
@@ -28,6 +33,10 @@ def time():
     return now
 
 
+def returntime():
+    now = datetime.datetime.now()
+    timestamp = datetime.datetime.timestamp(now)
+    return timestamp*1000
 
 users={}
 logs=[]
@@ -128,6 +137,13 @@ def Connection(username):
 
 
 
+@socketio.on('ping', namespace='/app')
+def ping():
+    emit("pingres",returntime())
+
+@socketio.on('pong', namespace='/app')
+def pong():
+        emit("pongres",returntime())
 
 
 

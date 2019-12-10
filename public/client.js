@@ -5,8 +5,6 @@ const inpbox = document.getElementById('inpbox')
 const chatbox = document.getElementById('chatbox')
 
 
-
-
 let name =""
 let previnp=""
 
@@ -20,6 +18,23 @@ localStorage.setItem("name" , `${name}`)
     name = localStorage.getItem("name")
     
     socket.emit("Connection", name)
+    socket.emit('ping',0);
+
+
+var pingres=0
+var pongres=0
+
+    socket.on("pingres", res => {
+        pingres=res
+        socket.emit('pong');
+    })
+    socket.on("pongres", res => {
+        pongres=res
+        ping=(pongres-pingres)/2
+        console.log(ping)
+        socket.emit('ping');
+    })
+
     appendMsg(`<span class="usrjoin">${name}</span> Joined`,"joined")
 
 
@@ -46,6 +61,7 @@ inpform.addEventListener("submit", e => {
     previnp=inptxt
     inpbox.value=""
     chatbox.scrollTop = chatbox.scrollHeight;
+    
     }
     
 })
