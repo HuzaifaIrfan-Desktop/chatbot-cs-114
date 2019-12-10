@@ -13,7 +13,12 @@
 
  ### Installing Python 
  Get Python for your Operating System from the download Page.
- Install and add to PATH. For Windows User This Option is in python setup.
+
+
+ Install and add to PATH. 
+
+ For Windows User This Option is in python setup.
+ 
  
 [Python Download Page](https://www.python.org/downloads/)
 * python 3.6.8 or higher
