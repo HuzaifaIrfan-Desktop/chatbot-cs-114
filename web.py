@@ -139,11 +139,7 @@ def Connection(username):
 
 @socketio.on('ping', namespace='/app')
 def ping():
-    emit("pingres",returntime())
-
-@socketio.on('pong', namespace='/app')
-def pong():
-        emit("pongres",returntime())
+    emit("pong")
 
 
 
