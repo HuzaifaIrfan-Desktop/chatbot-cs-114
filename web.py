@@ -137,6 +137,9 @@ def Connection(username):
 
 
 
+@socketio.on('ping', namespace='/app')
+def ping():
+    emit("pong")
 
 
 

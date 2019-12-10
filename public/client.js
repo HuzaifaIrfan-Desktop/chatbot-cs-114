@@ -20,6 +20,17 @@ localStorage.setItem("name" , `${name}`)
     socket.emit("Connection", name)
 
 
+    var startTime;
+
+setInterval(function() {
+  startTime = Date.now();
+  socket.emit('ping');
+}, 500);
+
+socket.on('pong', function() {
+  latency = Date.now() - startTime;
+  console.log(latency);
+});
 
 
 
