@@ -16,10 +16,11 @@ except:
 
 
 
-
+#Parent Class
 class bot:
 
 
+#Contructor Function
     def __init__(self,filename):
         self.fname=filename
         try:
@@ -36,62 +37,81 @@ class bot:
         self.tokens=[]
         self.answer=""
 
+#to setup nltk puntk
     def setup(self):
         nltk.download('punkt')
 
+
+#to check if quit token is present
     def checkquit(self):
         for token in self.tokens:
             if(token=="quit"):
                 return False
         return True
 
+
+#to reset the variables
     def reset(self):
         self.inp=""
         self.tokens=[]
         self.answer=""
 
+#to get input from user
     def getinput(self):
         self.inp =input("\nYOU: ").lower()
 
+
+#to set input from program
     def setinput(self,inp):
         self.inp =inp.lower()
 
+
+#Use NLTK tokenizer to tokenize
     def tokenize(self):
         self.tokens = word_tokenize(self.inp)
 
+
+#Use Builtin string split function with whitespace as delimiter after whitelisting invalid characters from input string
     def split(self):
         whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ+')
-        self.inp=''.join(filter(whitelist.__contains__, self.inp))
+        self.inp=''.join(filter(whitelist.__contains__, self.inp)) #whitelist invalid characters from input string
         self.tokens = self.inp.split()
 
+
+#print the seperated Token's list
     def printtokens(self):
         print(self.tokens)
 
+
+#return the seperated Token
     def returntokens(self):
         return self.tokens
 
 
+
+#Replace the similar tokens from the synonym list
     def similartokens(self):
-        temptokens=self.tokens
         for word in self.tokens:
             for synonym in self.synonymslst:
                 br=0
                 for keyword in synonym["keywords"]:
                     if(keyword==word):
 
-                        temptokens[int(temptokens.index(keyword))]=synonym["tag"]
+                        self.tokens[int(self.tokens.index(keyword))]=synonym["tag"]
 
                         br=1
                         break
                 if(br==1):
                     break
-        self.tokens=temptokens
 
 
+#remove Duplicate Word in tokens list
     def removeduplicate(self):
         self.tokens=list(dict.fromkeys(self.tokens))
 
 
+
+#Searching Response from the queries list and save to answer variable
     def searchresponse(self):
         for query in self.querieslst:
             for matchlst in query["match"]:
@@ -102,12 +122,13 @@ class bot:
                             matched+=1
                 if(matched>=len(matchlst)):
                     self.answer=random.choice(query["res"])
-                    return 0
-        return 0
+                    return
 
 
+#Print answer to the screen
     def printanswer(self):
         print("BOT:",self.answer)
 
+#Return answer
     def getanswer(self):
         return self.answer

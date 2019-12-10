@@ -5,9 +5,7 @@ import random
 
 
 titles=["           Initializing C++ CHAT BOT"]
-
 empty=["Plz write anything"]
-
 quits=["Exiting.."]
 
 

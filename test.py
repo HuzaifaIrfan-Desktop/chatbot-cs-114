@@ -30,7 +30,7 @@ for inp in inps:
     print(newbot.inp)
 
     print("\nTokenizing Input ")
-   # newbot.split() #spliting the input into tokens 
+   # newbot.split() #spliting the input into tokens by builtin python function
     newbot.tokenize() #spliting the input into tokens by nltk tokenizer function
     printtimedifference()
     newbot.printtokens()
