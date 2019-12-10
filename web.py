@@ -48,22 +48,26 @@ socketio = SocketIO(app, async_mode=async_mode)
 def send_file(path):
     return send_from_directory('public', path)
 
+
+#starting Route
 @app.route('/')
 def index():
     return send_from_directory('public', "index.html")
 
+
+#return all the logs in json format
 @app.route('/log')
 def logf():
     return jsonify(logs)
 
 
-
+#return all the glossery names in json format
 @app.route('/db')
 def db():
     return jsonify(glossery)
 
     
-
+#return all the objects for all users
 @app.route('/obj')
 def objf():
     tempobj=users.copy()

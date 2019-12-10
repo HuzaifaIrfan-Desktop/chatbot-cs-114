@@ -17,8 +17,8 @@
 
  Install and add to PATH. 
 
- For Windows User This Option is in python setup.
- 
+ For Windows User This Option is in python setup installation.
+
  
 [Python Download Page](https://www.python.org/downloads/)
 * python 3.6.8 or higher
@@ -44,15 +44,18 @@ In the Chat-Bot folder
 > source env/bin/activate
 
 
-
 ### Installing Dependencies
 > pip install -r requirements.txt 
 
-### Running the app
+### Running the app (CLI/TUI)
 > python main.py
 
+### Running the app (WEB GUI)
+> python web.py
 
 
+This Web GUI is also depolyed under this link till End of 2019.
+[WEB GUI](http://skiie.com:3098/)
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
