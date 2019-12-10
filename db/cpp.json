@@ -21,6 +21,7 @@
         {"tag":"me","keywords":["i","mine"]},
 
         {"tag":"comment","keywords":["comments"]},
+        
         {"tag":"operator","keywords":["operators"]},
 
 
@@ -37,7 +38,7 @@
      
 
 
-        {"tag":"c++","keywords":["cpp","cplus","cplusplus","+","++"]},
+        {"tag":"c++","keywords":["cpp","cplus","cplusplus"]},
 
         {"tag":"otherlang","keywords":["other","python","anaconda","c#","py","perl","php","js","javascript","typescript","java","kotlin","html","html5","css","css3","ruby"]}
 

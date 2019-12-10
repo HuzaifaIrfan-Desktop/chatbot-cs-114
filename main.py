@@ -1,5 +1,5 @@
 from cpp_bot import cpp_bot
-from colorama import Fore
+
 import random
 
 
@@ -43,7 +43,7 @@ while(notcheckquit):
         newbot.tokenize() #spliting the input into tokens 
 
         if(len(newbot.tokens)==0):
-            print(Fore.RED+"BOT: "+Fore.GREEN+random.choice(empty))
+            print(random.choice(empty))
 
 
     newbot.similartokens() #Replacing similar tokens with synonyms from the synonyms list

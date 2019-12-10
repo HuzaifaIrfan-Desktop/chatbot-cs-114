@@ -1,20 +1,26 @@
 # Chat-Bot
 #### This Bot answers queries related to c++ only
+#### This is the Git repository for semester project of CS-114
+##### ME-11 (C)
+##### Group - 3
+##### Group Members
+* Huzaifa Irfan (285501)
+* Hassan
 
 <!-- ## Setting up the Environment: -->
 
  ### Installing Python 
  Get Python for your Operating System from the download Page.
 
+ Install and add to PATH
 [Python Download Page](https://www.python.org/downloads/)
 * python 3.6.8 or higher
 * pip 19.3.1 or higher
 
+### Open Terminal / Bash / CMD / Powershell in the project directory 
 
-<!-- 
- Install and add to PATH -->
-
-<!-- ### Setting up the virtual environment
+### Setting up the virtual environment* 
+#### *Recommended but not required except if not working in the user base environment
 
 #### Installing virtualenv
 >pip install virtualenv
@@ -26,24 +32,24 @@ In the Chat-Bot folder
 #### Activating your Virtual Environment
 
 ##### For Windows
-> start env\Scripts\activate
-#####  For Mac / Linux
+> start env\Scripts\activate.bat
+#####  For Mac / Linux (Bash / Terminal)
 > source env/bin/activate
 
--->
+
 
 ### Installing Dependencies
->> pip install -r requirements.txt 
+> pip install -r requirements.txt 
 
 ### Running the app
->> python main.py
+> python main.py
 
 
 
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
-* [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001) 
+* Facebook : [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001) 
 
 
 <div>
@@ -58,5 +64,7 @@ In the Chat-Bot folder
  SMME, 
  NUST, Islamabad
  </div>
+
+
 
 

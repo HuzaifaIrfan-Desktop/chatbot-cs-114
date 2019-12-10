@@ -1,9 +1,18 @@
-import nltk
-from nltk.tokenize import word_tokenize
-from colorama import Fore
-
 import json
 import random 
+
+import sys
+
+
+
+try:
+    import nltk
+    from nltk.tokenize import word_tokenize
+except:
+    print("NLTK library Not Installed Properly")
+    input("Press Enter to exit")
+    sys.exit()
+
 
 
 
@@ -13,8 +22,14 @@ class bot:
 
     def __init__(self,filename):
         self.fname=filename
-        with open(self.fname) as dbfile:
-            self.db = json.load(dbfile)
+        try:
+            with open(self.fname) as dbfile:
+                self.db = json.load(dbfile)
+        except:
+            print("Database File not found at ",self.fname)
+            input("Press Enter to exit")
+            sys.exit()
+
         self.synonymslst=self.db["synonyms"]
         self.querieslst=self.db["queries"]
         self.inp=""

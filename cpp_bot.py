@@ -1,9 +1,12 @@
 from bot import bot
+import sys
 
-import json
-import random
-
-from colorama import Fore
+try:
+    from colorama import Fore
+except:
+    print("Colarama library Not Installed Properly")
+    input("Press Enter to exit")
+    sys.exit()
 
 class cpp_bot(bot):
 

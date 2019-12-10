@@ -115,7 +115,7 @@ def Connection(username):
     user["connectiontime"]=time()
     user["bot"]=cpp_bot("db/cpp.json")
     bot=user["bot"]
-    # bot.setup()
+    bot.setup()
     log=request.sid +" " +username + " Connected "+ time()
     logs.append(log)
     print(log)
