@@ -26,27 +26,25 @@ newbot.setup()
 
 
 
-notcheckquit=True
 
-while(notcheckquit):
+while(newbot.checkquit()):
 
 
 
     newbot.reset()
 
-    while(len(newbot.tokens)==0):
-        newbot.reset()
-        newbot.getinput() #asking for input from the user
+    newbot.getinput() #asking for input from the user
 
-        newbot.tokenize() #spliting the input into tokens 
+    newbot.tokenize() #spliting the input into tokens 
 
-        if(len(newbot.tokens)==0):
-            print(random.choice(empty))
-
+    if(len(newbot.tokens)==0):
+        print(random.choice(empty))
+        continue
+    
 
     newbot.similartokens() #Replacing similar tokens with synonyms from the synonyms list
 
-    notcheckquit=newbot.checkquit()
+
 
     newbot.removeduplicate() #Removing duplicate word from the tokens
 

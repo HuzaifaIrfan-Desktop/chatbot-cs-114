@@ -50,12 +50,8 @@ In the project Directory
 ### Running the app (CLI/TUI)
 > python main.py
 
-### Running the app (WEB GUI)
-> python web.py
-
-
-This Web GUI is depolyed till End of 2019 under
-[http://skiie.com:3098/](http://skiie.com:3098/)
+<!-- ### Running the app (WEB GUI)
+> python web.py -->
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
