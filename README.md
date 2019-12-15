@@ -50,8 +50,8 @@ In the project Directory
 ### Running the app (CLI/TUI)
 > python main.py
 
-<!-- ### Running the app (WEB GUI)
-> python web.py -->
+### Running the app (WEB GUI)
+> python web.py
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
