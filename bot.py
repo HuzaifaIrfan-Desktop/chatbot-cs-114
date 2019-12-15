@@ -36,6 +36,7 @@ class bot:
         self.inp=""
         self.tokens=[]
         self.answer=""
+        print("           Initializing CHAT BOT")
 
 #to setup nltk puntk
     def setup(self):

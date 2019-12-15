@@ -4,13 +4,13 @@ import random
 
 
 
-titles=["           Initializing C++ CHAT BOT"]
+
 empty=["Plz write anything"]
 quits=["Exiting.."]
 
 
 
-print(random.choice(titles))
+
 
 
 #create new cpp_bot Object
