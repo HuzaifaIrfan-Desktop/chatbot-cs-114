@@ -79,7 +79,7 @@
 
 
 
-            {"name":"operator overloading","match":[["overloading","operator"]],"res":[ "C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading."]},
+            {"name":"operator overloading","match":[["overloading","operator"]],"res":[ "Operator overloading is the ability to give the operators a special meaning for the data type."]},
 
 
 
@@ -184,7 +184,7 @@
             
             
             
-            {"name":"cpp developer","match":[["author"]],"res":["C++ was developed by Danish computer scientist Bjarne Stroustrup"]},
+            {"name":"cpp developer","match":[["c++","author"]],"res":["C++ was developed by Danish computer scientist Bjarne Stroustrup"]},
             
             
             {"name":"cpp defination","match":[["c++"]],"res":["C++ is a general-purpose programming language"]},

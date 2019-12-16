@@ -1,7 +1,7 @@
 from cpp_bot import cpp_bot
 import datetime
 
-inps=["What do you mean by operator overloading in classes in cpp???","Define Object Oriented Programming.....","What are loops in functions???"]
+inps=["What are loops in functions???","What do you mean by operator overloading in classes in cpp???","Define Object Oriented Programming....."]
 
 
 def returntime():
