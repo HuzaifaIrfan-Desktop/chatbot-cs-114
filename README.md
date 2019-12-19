@@ -4,10 +4,10 @@
 
 ##### Group-3 ME-11(C) Members
 * Huzaifa Irfan (285501)
-* Hassan Ahmed
+* Hassan Ahmed	
 * Hassaan Ahmed
 * Abu Huraira
-*  M. Abu Bakr Nadeem
+* M. Abu Bakr Nadeem
 
 <!-- ## Setting up the Environment: -->
 
@@ -54,14 +54,16 @@ In the project Directory
 > python web.py
 
 ### Contact
-* Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com) 
-* Facebook : [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001) 
+* Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com)
+* Facebook : [huzaifairfan2001@facebook](https://www.facebook.com/huzaifairfan2001)
 
 
 <div>
  CS-114 Semester Project
  <br>
- Dated : 10 Nov 2019
+ Duration : approx 1 month.
+ <br>
+ Completion Date : 10 Nov 2019
  <br>
  By Huzaifa Irfan
  <br>
