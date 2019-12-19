@@ -61,9 +61,9 @@ In the project Directory
 <div>
  CS-114 Semester Project
  <br>
- Duration : approx 1/2 month.
+Start : 9 Nov 2019
  <br>
- Completion Date : 10 Nov 2019
+ Completion : 14 Nov 2019
  <br>
  By Huzaifa Irfan
  <br>
