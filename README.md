@@ -61,7 +61,7 @@ In the project Directory
 <div>
  CS-114 Semester Project
  <br>
- Duration : approx 1 month.
+ Duration : approx 1/2 month.
  <br>
  Completion Date : 10 Nov 2019
  <br>
