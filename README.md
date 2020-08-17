@@ -2,12 +2,6 @@
 #### This Bot answers queries related to c++ only
 #### This is the Git repository for semester project of CS-114
 
-##### Group-3 ME-11(C) Members
-* Huzaifa Irfan (285501)
-* Hassan Ahmed	
-* Hassaan Ahmed
-* Abu Huraira
-* M. Abu Bakr Nadeem
 
 <!-- ## Setting up the Environment: -->
 
@@ -52,6 +46,39 @@ In the project Directory
 
 ### Running the app (WEB GUI)
 > python web.py
+
+
+## TUI View of ChatBot Developed in C++
+![CPP-Version](/img/chatbot-cppversion.png)
+
+## TUI View of ChatBot Developed in Python
+![Python-TUI-Version](/img/tui-chatbot.png)
+
+## WEB GUI View of ChatBot Developed in Python
+![Python-GUI-Version](/img/web-chatbot.png)
+
+
+
+## Setting up your own Bot
+
+- Create an instance of Bot Class
+- Set up your json database file in following format
+
+```
+    {
+        "synonyms":[
+        {"tag":"aoa","keywords":["asalaam","salam","assalaam","asalam"]}
+        ],
+        "queries":[
+            {"name":"quit","match":[["quit"]],"res":["Bye","Good Bye","See you soon","See ya","See you again"]}
+        ]
+    }
+```
+- The [synonyms] list shows similar words that means similar so that single word is being used in [queries] list
+- In queries Random response form res list is displayed.
+- if any of single object in [match] list found in the input, chat bot returns that response.
+- the object in [match] list must be a list of words. if all objects in one of the list matches, returns the response.
+- Example of json format is show in /db/cpp.json file
 
 ### Contact
 * Email : [huzaifairfan2001@gmail.com](mailto:huzaifairfan2001@gmail.com)
