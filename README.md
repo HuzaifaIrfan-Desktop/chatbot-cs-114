@@ -1,4 +1,5 @@
 # Chat-Bot
+## This is a Simple ChatBot not Machine learning and stuff involved. 
 #### This Bot answers queries related to c++ only
 #### This is the Git repository for semester project of CS-114
 
@@ -78,6 +79,7 @@ In the project Directory
 - In queries Random response form res list is displayed.
 - if any of single object in [match] list found in the input, chat bot returns that response.
 - the object in [match] list must be a list of words. if all objects in one of the list matches, returns the response.
+- the nested queries must be on top if that includes in the query so that correct response is given.
 - Example of json format is show in /db/cpp.json file
 
 ### Contact
