@@ -88,7 +88,7 @@ In the project Directory
 
 
 <div>
- CS-114 Semester Project
+ CS-114 (Fundamentals of Programming) Semester Project
  <br>
 Start : 9 Nov 2019
  <br>
