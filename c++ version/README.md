@@ -1,6 +1,6 @@
 # Chat Bot IN C++
 ## Use GCC C++ compiler for compilation.
-This project is dedicated to Friend (Saif ur Rehman).
+
 
 <div>
  CS-114 Semester Project
