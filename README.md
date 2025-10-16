@@ -172,3 +172,5 @@ Start : 9 Nov 2019
 # 📜 License
 
 Licensed under the GPL3 License, Copyright 2025 Huzaifa Irfan. [LICENSE](LICENSE)
+
+Last Updated on 2019-11-14
